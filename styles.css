@@ -1,4 +1,29 @@
 
+:root {
+  --clr-primary-400: hsl(12, 80%, 59%);
+  --clr-primary-100: hsl(13, 100%, 96%);
+
+  --clr-primary-400: hsl(228, 39%, 23%);
+
+  --clr-neutral-100: hsl(232, 12%, 13%);
+  --clr-neutral-900: hsl(0 0% 0%);
+
+  --ff-primary: 'Be Vietnam Pro', sans-serif;
+  
+  --ff-body: var(--f-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-300: .8125rem;
+  --fs-400: .875rem;
+  --fs-500: 1rem;
+  --fs-600: 1.875rem;
+  --fs-700: 2.5rem;
+}
+
 /* STARTER POINT */
 *,
 *::before,
