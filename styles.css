@@ -1,5 +1,6 @@
 
 :root {
+  --clr-accent-500: hsl(12, 60%, 45%);
   --clr-accent-400: hsl(12, 80%, 59%);
   --clr-accent-300: hsl(12, 80%, 75%);
   --clr-accent-100: hsl(13, 100%, 96%);
@@ -200,9 +201,21 @@ body {
   font-size: var(--fs-button);
   color: var(--clr-neutral-100);
   background-color: var(--clr-accent-400);
+  box-shadow: 0 1.125em 1em -1em var(--clr-accent-500);
+}
+
+.button[data-type="inverted"] {
+  color: var(--clr-accent-400);
+  background-color: var(--clr-neutral-100);
 }
 
 .button:hover,
 .button:focus-visible {
   background-color: var(--clr-accent-300);
+}
+
+.button[data-type="inverted"]:hover,
+.button[data-type="inverted"]:focus-visible {
+  color: var(--clr-accent-300);
+  background-color: var(--clr-neutral-100);
 }
