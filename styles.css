@@ -254,6 +254,18 @@ p[data-width="wide"] {
   margin-inline: auto;
 }
 
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
 .vertical-align-center {
   align-items: center;
 }
@@ -266,17 +278,7 @@ p[data-width="wide"] {
   margin-top: var(--flow-spacer, 3em);
 }
 
-.even-columns {
-  display: grid;
-  gap: 1rem;
-}
 
-@media (min-width: 50em) {
-  .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-}
 
 .text-primary-400 {
   color: var(--clr-primary-400)
