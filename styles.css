@@ -312,7 +312,7 @@ input:where([type="text"], [type="email"]) {
   text-decoration: none;
 }
 
-.footer-nav a:where(:hover, :focus) {
+.footer-nav a:is(:hover, :focus) {
   color: var(--clr-accent-400);
 }
 
