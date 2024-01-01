@@ -231,6 +231,12 @@ p[data-width="wide"] {
   }
 }
 
+/* FOOTER */
+
+.primary-footer {
+  --logo-color: var(--clr-neutral-100);
+}
+
 /* FOOTER NAVIGATION*/
 
 .footer-nav {
