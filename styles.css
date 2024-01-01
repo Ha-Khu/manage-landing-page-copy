@@ -266,6 +266,20 @@ p[data-width="wide"] {
 
 .primary-footer-form {
   grid-area: form;
+  
+  display: grid;
+  align-content: space-between;
+}
+
+.primary-footer form {
+  display: flex;
+  gap: var(--size-200);
+}
+
+input:where([type="text"], [type="email"]) {
+  border-radius: 100vw;
+  border: 0;
+  padding: var(--size-300) var(--size-400);
 }
 
 @media (min-width: 50em) {
@@ -290,7 +304,7 @@ p[data-width="wide"] {
 
 .footer-nav {
   columns: 2;
-  gap: max(30vw, 2rem);
+  gap: clamp(var(--size-200), 30vw, var(--size-900));
 }
 
 .footer-nav a {
